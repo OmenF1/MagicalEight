@@ -13,6 +13,7 @@ namespace MagicEight
             string token = ConfigurationManager.AppSettings.Get("token");
 
             MagicEight magic = new MagicEight(id, secret, token);
+            magic.Run();
 
         }
     }
