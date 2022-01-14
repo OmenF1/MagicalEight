@@ -51,9 +51,11 @@ namespace MagicEight
                 {
                     if( message.WasComment)
                     {
+                        //  TODO: 
+                        //  Fix formating on messages.
+                        //  Prevent replying to messages more than once if application is restarted.
                         Console.WriteLine($"Responding to messageID{message.Id}");
                         reddit.Comment(message.Name).Reply(GenerateResponse());
-                        message.
                     }
                 }
             }
